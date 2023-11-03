@@ -1,5 +1,8 @@
 
 const usersList = ({ users}:any) => {
+
+
+
   return (
       <>
         <h1>List of Users</h1>
@@ -23,12 +26,12 @@ const usersList = ({ users}:any) => {
 export default usersList
 
 export async function getStaticProps() {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users")
-    const data = await response.json()
-    console.log(data, "clear");
-    return {
-      props: {
-        users: data,
-      },
-    }
+  const response = await fetch("https://jsonplaceholder.typicode.com/users")
+  const data = await response.json()
+  console.log(data, "clear");
+  return {
+    props: {
+      users: data,
+    },
+  }
 }

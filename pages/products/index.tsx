@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Home from ".."
 
 
 const ProductList = ({productId = 100}) => {
@@ -6,7 +7,9 @@ const ProductList = ({productId = 100}) => {
 
   return (
         <>
-       
+       <Home/>
+
+
         <h2>
          <Link href='/blog'>
             Blog
