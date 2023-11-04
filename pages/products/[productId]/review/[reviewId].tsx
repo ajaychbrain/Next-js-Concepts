@@ -1,4 +1,4 @@
-import Home from "@/pages";
+// import Home from "@/pages";
 import { useRouter } from "next/router"
 const Review = () => {
 
@@ -9,7 +9,7 @@ const Review = () => {
 
   return (
         <>
-        <Home/>
+        {/* <Home/> */}
         <h1>Product Detail Page is {productId} and Review Page is {reviewId}</h1>
         
         </>

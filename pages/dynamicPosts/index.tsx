@@ -1,5 +1,5 @@
 import Link from "next/link"
-
+import Home from ".."
 // import Header from "../header"
 
 function PostList({posts}:any) {
@@ -10,7 +10,7 @@ function PostList({posts}:any) {
             {
                 posts.map((post:any, id:number)=>{
                     return(
-                        <Link href={`/posts/${post.id}`}>
+                        <Link href={`/dynamicPosts/${post.id}`}>
                         <div key={id}>
                             <h2>{post.id} {post.name}</h2><hr/>
                         </div>
@@ -31,7 +31,7 @@ export async function getStaticProps() {
 
         return {
             props: {
-                posts: data.slice(0,3)
+                posts: data
             }
         }
 

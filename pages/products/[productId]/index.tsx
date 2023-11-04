@@ -1,4 +1,5 @@
 import Home from "@/pages";
+// import Header from "@/pages/header";
 import Link from "next/link";
 import { useRouter } from "next/router"
 const ProductdDeail = () => {
@@ -10,7 +11,7 @@ const ProductdDeail = () => {
 
   return (
         <>
-        <Home/>
+        {/* <Header/> */}
         <h1>Product Detail Page {productId}</h1>
         
 

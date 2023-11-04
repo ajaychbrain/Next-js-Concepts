@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Home from ".."
+// import Header from "../header"
 
 
 const ProductList = ({productId = 100}) => {
@@ -7,25 +8,15 @@ const ProductList = ({productId = 100}) => {
 
   return (
         <>
-       <Home/>
+       {/* <Header/> */}
 
 
         <h2>
-         <Link href='/blog'>
-            Blog
-            </Link>
+            Product Page
             </h2>
             <br/>
-            <h2>
-            <Link href='/products'>
-            Products
-            </Link>
-            </h2><br/>
-            <h2>
-            <Link href='/'>
-            Home
-            </Link>
-            </h2>
+           
+           
 
             <h2>
          <Link href='/products/1'>
